@@ -1,0 +1,46 @@
+/**
+ * Abycss Test css 01
+ */
+
+/**
+ * Test matching of repeated rulesets
+ */
+html {
+	backround: #f00;
+}
+
+body {
+	background: #f00;
+}
+
+/**
+ * Test BEM identification
+ */
+
+.example-block {
+	background: #f0f;
+}
+
+.example-block__element {
+	background: #00f;
+}
+
+.example-block__element--modifier {
+	background: #0f0;
+}
+
+/**
+ * An example of a compound selector which should count toward "example-block" count
+ *
+ * Also should set off warning flags for strict BEM
+ */
+.example-block p, .example-block__element p {
+	font-size: 23em;
+}
+
+.example-block__element p {
+	/**
+	 * Colour should count against #f00 as well as rgb / rgba uses
+	 */
+	color: #ff0000;
+}

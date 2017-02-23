@@ -1,11 +1,29 @@
 {
   "name": "abycss",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "When you gaze into abysmal CSS, the abysmal CSS also gazes into you",
   "main": "index.js",
+  "bin": {
+    "abycss": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "K Olsen <pentaphobe@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pentaphobe/abycss.git"
+  },  
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.9.0",
+    "css": "^2.2.1"
+  },
+  "devDependencies": {
+    "glob": "^7.1.1",
+    "lodash": "^4.17.2"
+  }
 }
